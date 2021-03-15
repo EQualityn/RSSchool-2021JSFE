@@ -373,7 +373,11 @@ color: #F7F7F7;
 background-color: transparent;
 padding: 0;
 }
-.carousel_slide,.donate.header_sign,.lupka,.logo_roga:active, 
+.donate:active
+{
+    background: rgb(192, 106, 0);
+}
+.carousel_slide,.header_sign,.lupka,.logo_roga:active, 
 .carousel_slide,.donate,.lupka,.header_sign,.logo_roga:focus {
     outline: none;
 }
