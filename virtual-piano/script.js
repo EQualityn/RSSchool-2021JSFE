@@ -76,14 +76,13 @@ document.addEventListener('keyup', (event) => {
 });
 
 const FULLSCREEN = document.querySelector('.fullscreen');
-var FullscreenOn = false;
 FULLSCREEN.addEventListener('click', () => {
-  if (!FullscreenOn) {
-    FullscreenOn = true;
+  if (!document.fullscreenElement) {
     document.documentElement.requestFullscreen();
   } else {
-    FullscreenOn = true;
-    document.exitFullscreen();
+      if (document.exitFullscreen) {
+        document.exitFullscreen();
+    }
   }
 })
 
