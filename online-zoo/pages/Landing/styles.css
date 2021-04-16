@@ -5,6 +5,12 @@
     font-family: SceneW01-Black;
     src: url(../../assets/fonts/12309.ttf);
 }
+
+@media screen and (min-width: 1040px) {
+    body {
+      display: block;
+    }
+  }
 .visuallyhidden
 {
     position: absolute;
@@ -18,7 +24,9 @@
     border: 0;
 }
 body {
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: #ffffff;
     margin: 0;
     padding: 0;
@@ -27,9 +35,10 @@ body {
 }
 
 #head {
-
+    position: relative;
+    left: -70px;
     height: 80px;
-    width: 100%;
+    
     /* background-color: darkgray; */
     display: flex;
 
@@ -37,15 +46,59 @@ body {
 }
 
 .header {
+    display: flex;
+    position: relative;
+    justify-content: center;
     width: 100%;
     height: 698px;
     left: 0%;
     right: 0%;
     top: 0%;
     bottom: 84.12%;
-    background: radial-gradient(71.89% 152.21% at 40.1% 50%, #B5E6FF 0%, #59C3FB 100%);
+              background: radial-gradient(71.89% 152.21% at 40.1% 50%, #B5E6FF 0%, #59C3FB 100%);
+    background-repeat: no-repeat;
+}
+.head-wrapper
+{
+    width: 1920px;
+    display: flex;
+    justify-content: center;
+    background: 
+    url(../../assets/images/drops1.png) 804px no-repeat,
+                      url(../../assets/images/panda\ 1.svg) 866px 55px no-repeat,
+                      url(../../assets/images/drops2.png) 219px no-repeat;
+}
+/* .panda-pic {
+
+    position: absolute;
+    left: 866px;
+    top: 55px;
+    background-size: 696px 689px;
+    background-image: url(../../assets/images/panda\ 1.svg);
+    background-repeat: no-repeat;
+    height: 692px;
+    width: 693px;
 }
 
+.bubble-1 {
+    top: -2px;
+    position: absolute;
+    left: 220px;
+    background-image: url(../../assets/images/drops2.png);
+    background-repeat: no-repeat;
+    height: 905px;
+    width: 1046px;
+}
+
+.bubble-2 {
+    left: -60px;
+    bottom: -15px;
+    position: absolute;
+    background-image: url(../../assets/images/drops1.png);
+    background-repeat: no-repeat;
+    height: 764px;
+    width: 834px;
+} */
 .logo_zoo {
     background-image: url(../../assets/icons/logo.svg);
     background-color: transparent;
@@ -125,43 +178,12 @@ line-height: 21px;
     cursor:default;
     transform: scale(1);
 }
-.panda-pic {
 
-    position: absolute;
-    left: 866px;
-    top: 55px;
-    background-size: 696px 689px;
-    background-image: url(../../assets/images/panda\ 1.svg);
-    background-repeat: no-repeat;
-    height: 692px;
-    width: 693px;
-}
-
-.bubble-1 {
-    top: -2px;
-    position: absolute;
-    left: 220px;
-    background-image: url(../../assets/images/drops2.png);
-    background-repeat: no-repeat;
-    height: 905px;
-    width: 1046px;
-}
-
-.bubble-2 {
-    left: -60px;
-    bottom: -15px;
-    position: absolute;
-    background-image: url(../../assets/images/drops1.png);
-    background-repeat: no-repeat;
-    height: 764px;
-    width: 834px;
-}
 
 .head-text {
     height: 252px;
     width: 570px;
-    margin-left: 380px;
-    margin-top: 128px;
+   
     font-family: SceneW01-Black, sans-serif;
     font-style: normal;
     font-weight: 900;
@@ -172,7 +194,9 @@ line-height: 21px;
     letter-spacing: 0.03em;
 
     /* Style_2 */
-
+    right: 648px;
+    top: 207px;
+position: relative;
     color: #000000;
 
 }
@@ -180,15 +204,13 @@ line-height: 21px;
 .head-play__button {
     width: 233px;
     height: 51px;
-
+position: relative;
+top: 510px;
+right: 1217px;
     background: #70CB0E;
     border-radius: 30px;
     border: 0px;
-    position: relative;
-    left: 382px;
-    top: 50px;
-    width: 233px;
-    height: 51px;
+   
 
 }
 
@@ -253,48 +275,46 @@ line-height: 21px;
     justify-content: center;
     position: relative;
 }
-.hiw__animal-smol
+.hiw__animal
 {
     list-style-type: none;
     position: absolute;
     width: 250px;
     height: 350px;
-    z-index: 1;
 }
 .sl {
+    z-index: 1;
 left: 9px;
 }
 .sr
 {
+    z-index: 1;
     left: 1130px;
 }
-.hiw__animal-medium
+.md
 {
-    list-style-type: none;
-     position: absolute;
-    width: 300px;
-    height: 400px;
-    z-index: 2;
-}
-.ml {
-    left: 239px;
-}
-.mr {
-    left: 850px;
-}
-.hiw__animal-mid {
-    list-style-type: none;
-    position:absolute;
-    left: 260px;
-    width: 350px;
-    height: 450px;
+    left: 570px;
+   transform: scale(1.4, 1.286);
     z-index: 3;
 }
+
+.ml {
+    left: 264px;
+    transform: scale(1.2, 1.143);
+    z-index: 2;
+    
+}
+.mr {
+    transform: scale(1.2, 1.143);
+    right: 280px;
+    z-index: 2;
+}
+
 
 
 .hiw__app-descr {
     margin-top: 17px;
-    width: 933px;
+    width: 60%;
     height: 126px;
     font-family: 'Roboto';
     font-style: normal;
@@ -410,8 +430,8 @@ left: 9px;
     position: absolute;
     height: 501.63px;
     width: 580.48px;
-  right: 616px;
-  top: 15px;
+  top: 14px;
+ 
     padding: 0;
     background-image: url(../../assets/images/Arrow.png);
 }
@@ -627,30 +647,34 @@ line-height: 14px;
 }
 .footer
 {
+   position: relative;
     width: 100%;
     height: 270px;
-    background-color: #DFF5B0;
-    position: relative;
+        display: flex;
+    align-items: center;
+    justify-content: center;
+background:
+#DFF5B0;
+
 }
-.field
+
+.foot-wrapper
 {
-   position: absolute;
-   top: -20px;
-   left: 17px;
-    width: 1909px;
-    height: 270px;
-   display: flex;
-    background-image: url(../../assets/images/field.png);
-    
-    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+  
+    margin: 0;   
+    top: -10px;
+    right: -15px;
+    position: relative;
+        background: url(../../assets/images/field.png) 100% no-repeat;
+        width: 1909px;
+        height: 340px;
+       
 }
 .f-main-cont
 {
-    position: absolute;
-    left: 380px;
-    top: 79px;
-    width: 1159.35px;
-    height: 171px;
+   
 
     display: flex;
 flex-direction: column;
@@ -666,6 +690,8 @@ justify-content: space-between;
 {
     height: 57px;
     position: relative;
+    top: 124px;
+    left: -7px;
 }
 
 .logo_zoo-foot{
@@ -799,7 +825,8 @@ left: 198px;
 .fdown
 {
     height: 50px;
-
+    bottom: 44px;
+    left: -5px;
 position: relative;
 }
 .RS
