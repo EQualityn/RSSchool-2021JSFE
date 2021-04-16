@@ -1,0 +1,703 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+@font-face {
+    font-family: SceneW01-Black;
+    src: url(../../../assets/fonts/12309.ttf);
+}
+.visuallyhidden
+{
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
+    clip-path: inset(0px 0px 99.9% 99.9%);
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    border: 0;
+}
+body {
+    
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#head {
+    background: #ffffff;
+    height: 80px;
+    width: 100%;
+    /* background-color: darkgray; */
+    display: flex;
+
+    align-items: center;
+}
+
+.content {
+    width: 100%;
+    height: 1550px;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 84.12%;
+    background: #ffffff;
+    position: absolute;
+    top: -207px;
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 8px;
+}
+#wrapper
+{
+    width: 100%;
+    height: 1343px;
+    position: relative;
+    margin-top: 207px;
+}
+.logo_zoo {
+    background-image: url(../../../assets/icons/logo.svg);
+    background-color: transparent;
+    height: 57px;
+    width: 112px;
+    border: 0;
+    z-index: 2;
+}
+/* .logo_zoo:hover
+ {
+     cursor: pointer;
+ } */
+.logo {
+    z-index: 2;
+    margin-left: 380px;
+}
+
+.logo:hover,.logo-foot {
+    cursor: pointer;
+}
+
+.head_info {
+    margin-left: 57px;
+    width: 409px;
+    height: 21px;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.head_info__element {
+
+    text-decoration: none;
+    width: auto;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    z-index: 2;
+
+    /* Style_2 */
+    /* Inside Auto Layout */
+
+}
+
+.head_info__element:hover {
+    cursor: pointer;
+    transform: scale(1.15);
+}
+
+.head-link {
+    text-decoration: none;
+    color: #000000;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+
+}
+
+.head-link:hover {
+    cursor: pointer;
+    transform: scale(1.15);
+}
+
+.mark {
+    font-weight: 500;
+    text-shadow: #70CB0E 0 0 3px;
+}
+.mark:hover
+{
+    cursor:default;
+    transform: scale(1);
+}
+
+.footer
+{
+    width: 100%;
+    height: 270px;
+    background-color: #DFF5B0;
+    position: relative;
+}
+.field
+{
+   position: absolute;
+   top: -20px;
+   left: 17px;
+    width: 1909px;
+    height: 270px;
+   display: flex;
+    background-image: url(../../../assets/images/field.png);
+    
+    background-repeat: no-repeat;
+}
+.f-main-cont
+{
+    position: absolute;
+    left: 380px;
+    top: 79px;
+    width: 1159.35px;
+    height: 171px;
+
+    display: flex;
+flex-direction: column;
+justify-content: space-between;
+
+}
+.f-main
+{   
+    
+    width: 1159.35px;
+}
+.fup
+{
+    height: 57px;
+    position: relative;
+}
+
+.logo_zoo-foot{
+    background-image: url(../../../assets/icons/logof.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    height: 50px;
+    width: 98px;
+    border: 0;
+   
+}
+.logo_zoo-foot:hover
+{
+    cursor: pointer;
+}
+.logo_zoo-foot:active, /* FOR FUTURE BUTTON OUTLINING*/
+.logo_zoo-foot:focus {
+    outline: none;
+}
+.logo_zoo:hover, .logo:hover
+{
+    cursor: pointer;
+}
+.logo_zoo:active, /* FOR FUTURE BUTTON OUTLINING*/
+.logo_zoo:focus
+{
+    outline: none;
+}
+
+.foot-button {
+   top: 1px;
+    background: #70CB0E;
+    border-radius: 30px;
+    border: 0px;
+position: absolute;
+left: 198px;
+    
+    width: 230px;
+    height: 50px;
+
+}
+.foot-am
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 48px;
+    height: 57px;
+    position: absolute;
+    left: 590px;
+    top: 2px;
+}
+.foot-cf
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    left: 759px;
+    top: 2px;
+    width: 87px;
+    height: 57px;
+}
+.foot-link {
+    text-decoration: none;
+    color: #000000;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+}
+.foot-link:hover
+{
+    cursor: pointer;
+    transform: scale(1.15);
+}
+.foot-media
+{
+    position: absolute;
+    right: 0;
+    top: -15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    width: 190px;
+}
+.one_link
+{
+    height: 40px;
+    width: 41px;
+    text-decoration: none;
+    display: block;
+    
+}
+.one_link:hover
+{
+    transform: scale(1.15);
+}
+.media_link
+{
+    list-style: none;
+    
+}
+.inst
+{
+    background-image: url(../../../assets/icons/Insta.svg);
+}
+.fb
+{
+    background-image: url(../../../assets/icons/Facebook.svg);
+}
+.twit
+{
+    background-image: url(../../../assets/icons/Twitter.png);
+}
+.tube
+{
+    background-image: url(../../../assets/icons/Youtube.png);
+}
+.media_link:hover
+{   
+    cursor: pointer;
+    
+}
+.fdown
+{
+    height: 50px;
+
+position: relative;
+}
+.RS
+{
+    height: 50px;
+    width: 141px;
+margin-bottom: 0px;
+margin-left: 0px;
+}
+.RS-pic
+{
+    height: 50px;
+    width: 141px;
+}
+.YEM
+{
+    height: 50px;
+    width: 97px;
+    position: absolute;
+    bottom: 0px;
+    left: 199px;
+}
+.YEM-pic
+{
+    height: 50px;
+    width: 97px;
+}
+.copyright
+{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    margin-left: 72px;
+    position: absolute;
+    left: 300px;
+    bottom: 0px;
+}
+.author
+{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    margin-left: 210px;
+   
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+.foot-button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.head-play__button__play {
+    width: 34px;
+    height: 21px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    margin-left: 2px;
+    color: #000000;
+}
+.hiw,.paf,.tstm,.piz
+{
+    margin-left: 9px;
+}
+.sidebar
+{
+    top: 107px;
+    position: sticky;
+    z-index: 2;
+    width: 111px;
+    height: 380px;
+   background-image: url(../../../assets/images/aside-back.svg);
+   
+}
+.bar-animals
+{
+    height: 354px;
+    width: 64px;
+    position: absolute;
+    
+    top: 13px;
+    left: 20px;
+}
+.animal-link
+{
+    height: 64px;
+    width: 64px;
+}
+.the-animal
+{
+    position: relative;
+    height: 64px;
+    width: 64px;
+    border: 2px solid #FFFFFF;
+    border-radius: 32px;
+}
+.the-animal:hover
+{
+    
+    border: 2px solid #70CB0E;
+    border-radius: 34px;
+    background-color:  #70CB0E;
+    box-shadow: 0 0 0 2px  #70CB0E;
+    
+}
+.the-animal .tooltiptext
+{
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    background-color: #70CB0E;
+    color: rgb(0, 0, 0);
+    text-align: center;
+   
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+text-align: center;
+}
+.the-animal .tooltip-triang
+{   
+    position: absolute;
+    visibility: hidden;
+    height: 9px;
+    width: 9px;
+    z-index: 2;
+}
+.eagle-pic .tooltip-triang 
+{
+    left: 68px;
+    top: 27px;
+}
+.allig-pic .tooltip-triang 
+{
+    
+    left: 68px;
+    top: 27px;
+}
+.monke-pic .tooltip-triang 
+{
+    
+    left: 68px;
+    top: 27px;
+    
+}
+.panda-pic .tooltip-triang 
+{
+    
+    left: 68px;
+    top: 27px;
+}
+.the-animal:hover .tooltip-triang
+{
+    visibility: visible;
+}
+.the-animal:hover .tooltiptext {
+    visibility: visible;
+}
+
+.eagle-pic .tooltiptext
+{
+    width: 108px;
+    height: 47px;
+    top: 3px;
+    left: 77px;
+}
+
+.allig-pic .tooltiptext
+{
+    width: 102px;
+    height: 47px;
+    top: 3px;
+    left: 77px;
+}
+.monke-pic .tooltiptext
+{
+    width: 102px;
+    height: 47px;
+    top: 3px;
+    left: 77px;
+}
+.panda-pic .tooltiptext
+{
+    width: 100px;
+    height: 47px;
+    top: 3px;
+    left: 77px;
+}
+.eagle-pic
+{
+    
+    background-image: url(../../../assets/icons/the-eagle.png);
+    top: -44px;
+    right: 42px;
+}
+.allig-pic
+{
+    background-image: url(../../../assets/icons/the-allig.png);
+    top: -20px;
+    right: 42px;
+}
+.monke-pic
+{
+    background-image: url(../../../assets/icons/the-monke.png);
+    top: -56px;
+    right: 42px;
+}
+.panda-pic
+{
+    border: 2px solid #70CB0E;
+    border-radius: 34px;
+    background-color:  #70CB0E;
+    box-shadow: 0 0 0 2px  #70CB0E;
+    background-image: url(../../../assets/icons/the-panda.png);
+    top: -32px;
+    right: 42px;
+}
+.donate-pic
+{
+    top: -66px;
+    right: 42px;
+    background-image: url(../../../assets/icons/donate.png);
+}
+.donate-panda
+{
+    height: 47px;
+    width: 38px;
+    position: absolute;
+    top: 11px;
+    left: 12px;
+}
+.cont-capt {
+    margin-top: 78px;
+    
+    width: 233px;
+    height: 47px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+    color: #000000;
+}
+.main-video
+{
+    margin-top: 80px;
+    width: 1160px;
+    height: 653px;
+}
+.smol-videos
+{
+    margin-top: 20px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 155px;
+    width: 1164px;
+}
+.smol-video
+{
+    width: 275px;
+    height: 155px;
+}
+.caption
+{
+    margin-top: 30px;
+    height: 61px;
+    width: 1160px;
+    display: flex;
+    align-items: center;
+    background-color: #a7e1ff;
+    position: relative;
+}
+.kid-caption
+{
+   position: absolute;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+
+bottom: 22px;
+}
+.first
+{
+left: 20px;
+
+}
+.second
+{
+    right: 157px;
+}
+.descr-grid
+{
+    margin-top: 20px;
+    display: grid;
+
+    grid-column-gap: 20px;
+    grid-row-gap:20px ;
+    grid-template-columns: repeat(2, 1fr);
+}
+.descr
+{
+    display: flex;
+    background-color: #a7e1ff;
+    height: 142px;
+    width: 570px;
+    position: relative;
+}
+.descr-name
+{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+padding-left: 20px;
+padding-top: 20px;
+height: 19px;
+width: auto;
+text-transform: uppercase;
+}
+.descr-content
+{
+    width: 470px;
+    height: 76px;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+
+position: absolute;
+top: 47px;
+left: 20px;
+}
+.descr .popul
+{
+
+}
+.descr .nutri
+{
+
+}
+.descr .habit
+{
+
+}
+.facts .descr-name
+{
+    width: 180px;
+}
+.descr-arrow
+{
+    right: 20px;
+    top: 47px;
+    position: absolute;
+    background-image: url(../../../assets/icons/arrow-top.svg);
+    background-color: transparent;
+    border: 0px;
+    height: 45px;
+    width: 45px;
+}
+.descr-arrow:hover
+{
+    cursor: pointer;
+}

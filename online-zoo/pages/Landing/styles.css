@@ -1,0 +1,855 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+@font-face {
+    font-family: SceneW01-Black;
+    src: url(../../assets/fonts/12309.ttf);
+}
+.visuallyhidden
+{
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
+    clip-path: inset(0px 0px 99.9% 99.9%);
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    border: 0;
+}
+body {
+    
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#head {
+
+    height: 80px;
+    width: 100%;
+    /* background-color: darkgray; */
+    display: flex;
+
+    align-items: center;
+}
+
+.header {
+    width: 100%;
+    height: 698px;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 84.12%;
+    background: radial-gradient(71.89% 152.21% at 40.1% 50%, #B5E6FF 0%, #59C3FB 100%);
+}
+
+.logo_zoo {
+    background-image: url(../../assets/icons/logo.svg);
+    background-color: transparent;
+    height: 57px;
+    width: 112px;
+    border: 0;
+    z-index: 2;
+}
+/* .logo_zoo:hover
+ {
+     cursor: pointer;
+ } */
+.logo {
+    z-index: 2;
+    margin-left: 380px;
+}
+
+.logo:hover,.logo-foot {
+    cursor: pointer;
+}
+
+.head_info {
+    margin-left: 57px;
+    width: 409px;
+    height: 21px;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.head_info__element {
+
+    text-decoration: none;
+    width: auto;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    z-index: 2;
+
+    /* Style_2 */
+    /* Inside Auto Layout */
+
+}
+
+.head_info__element:hover {
+    cursor: pointer;
+    transform: scale(1.15);
+}
+
+.head-link {
+    text-decoration: none;
+    color: #000000;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+
+}
+
+.head-link:hover {
+    cursor: pointer;
+    transform: scale(1.15);
+}
+
+.mark {
+    font-weight: 500;
+    text-shadow: #70CB0E 0 0 3px;
+}
+.mark:hover
+{
+    cursor:default;
+    transform: scale(1);
+}
+.panda-pic {
+
+    position: absolute;
+    left: 866px;
+    top: 55px;
+    background-size: 696px 689px;
+    background-image: url(../../assets/images/panda\ 1.svg);
+    background-repeat: no-repeat;
+    height: 692px;
+    width: 693px;
+}
+
+.bubble-1 {
+    top: -2px;
+    position: absolute;
+    left: 220px;
+    background-image: url(../../assets/images/drops2.png);
+    background-repeat: no-repeat;
+    height: 905px;
+    width: 1046px;
+}
+
+.bubble-2 {
+    left: -60px;
+    bottom: -15px;
+    position: absolute;
+    background-image: url(../../assets/images/drops1.png);
+    background-repeat: no-repeat;
+    height: 764px;
+    width: 834px;
+}
+
+.head-text {
+    height: 252px;
+    width: 570px;
+    margin-left: 380px;
+    margin-top: 128px;
+    font-family: SceneW01-Black, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 70px;
+    line-height: 120%;
+    /* or 84px */
+
+    letter-spacing: 0.03em;
+
+    /* Style_2 */
+
+    color: #000000;
+
+}
+
+.head-play__button {
+    width: 233px;
+    height: 51px;
+
+    background: #70CB0E;
+    border-radius: 30px;
+    border: 0px;
+    position: relative;
+    left: 382px;
+    top: 50px;
+    width: 233px;
+    height: 51px;
+
+}
+
+.head-play__button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.head-play__button:active, /* FOR FUTURE BUTTON OUTLINING*/
+.head-play__button:focus
+{
+    outline: none;
+}
+.head-play__button__play {
+    width: 34px;
+    height: 21px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    margin-left: 2px;
+    color: #000000;
+}
+
+.head-play__triangle {
+    margin-left: 3px;
+    margin-top: 3px;
+}
+
+.hiw {
+    width: 100%;
+    height: 983px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hiw__label {
+    margin-top: 100px;
+    width: 233px;
+    height: 47px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+    color: #000000;
+}
+
+.hiw__animals {
+    margin-top: 29px;
+    width: 1365px;
+    height: 549px;
+    background-image: url(../../assets/images/ashes.svg);
+    background-repeat: no-repeat;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.hiw__animal-smol
+{
+    list-style-type: none;
+    position: absolute;
+    width: 250px;
+    height: 350px;
+    z-index: 1;
+}
+.sl {
+left: 9px;
+}
+.sr
+{
+    left: 1130px;
+}
+.hiw__animal-medium
+{
+    list-style-type: none;
+     position: absolute;
+    width: 300px;
+    height: 400px;
+    z-index: 2;
+}
+.ml {
+    left: 239px;
+}
+.mr {
+    left: 850px;
+}
+.hiw__animal-mid {
+    list-style-type: none;
+    position:absolute;
+    left: 260px;
+    width: 350px;
+    height: 450px;
+    z-index: 3;
+}
+
+
+.hiw__app-descr {
+    margin-top: 17px;
+    width: 933px;
+    height: 126px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 21px;
+
+    text-align: center;
+
+    /* Style_2 */
+
+    
+}
+.piz
+{
+    width: 100%;
+    height: 1058px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.grid-but
+{
+    padding: 0;
+    margin-top: 80px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1170px;
+    height: 630px;
+}
+.piz__animals
+{
+    position: absolute;
+    left: 88px;
+    display: grid;
+    grid-column-gap: 20px;
+    grid-row-gap:30px ;
+    grid-template-columns: repeat(4, 1fr);
+}
+.piz__animal
+{
+    height: 300px;
+    width: 233px;
+}
+.piz__animal:hover
+
+{
+   transform: scale(1.086,1.1);
+    cursor: pointer;
+}
+.piz-button {
+    background: #70CB0E;
+    border-radius: 30px;
+    border: 0px;
+    position: relative;
+    left: -2px;
+    top: 50px;
+    width: 283px;
+    height: 51px;
+
+}
+.piz-arrow
+{
+   
+    background-color: transparent;
+    border:0px;
+}
+.piz-arrow:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.piz-button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.piz-button:active, /* FOR FUTURE BUTTON OUTLINING*/
+.piz-button:focus
+{
+    outline: none;
+}
+.paf
+{
+    position: relative;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.paf-content
+{
+    height: 273px;
+    width: 1052px;
+    display: flex;
+    margin-top: 80px;
+    margin-left: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+.ash-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 276px;
+    width: 320px;
+    position: relative;
+}
+.paf-arrow
+{
+    position: absolute;
+    height: 501.63px;
+    width: 580.48px;
+  right: 616px;
+  top: 15px;
+    padding: 0;
+    background-image: url(../../assets/images/Arrow.png);
+}
+.paf-ash
+{
+    padding-top: 35px;
+    background-image: url(../../assets/images/ash-left.png);
+    background-repeat: no-repeat;
+    width: 205px;
+    height: 195px;
+    transform: rotate(-23);
+    display: flex;
+    justify-content: center;
+    position: relative;
+   
+}
+.paf-ash-front
+{
+    position: absolute;
+    height: 151px;
+   
+}
+.card
+{
+    top: 20px;
+    width: 143px;
+    left: 33px;
+}
+.zoo
+{
+    left: 33px;
+    top: 20px;
+    width: 148px;
+}
+.panda
+{
+    left: 42px;
+    top: 27px;
+    width: 124px;
+}
+.paf-ash-descr
+{
+    
+    position: absolute;
+    bottom: -1px;
+    left: 3px;
+    width: 320px;
+    height: 38px;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+text-align:center;
+}
+.tstm
+{
+    height: 797px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.tstm-but
+{
+    padding: 0;
+    margin-top:80px;
+    margin-left: 2px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1170px;
+    height: 369px;
+}
+.tstm-container
+{
+    position: absolute;
+    left: 88px;
+    display: grid;
+    grid-column-gap: 20px;
+    grid-row-gap:30px ;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.tstm-button {
+    background: #70CB0E;
+    border-radius: 30px;
+    border: 0px;
+    position: relative;
+    left: -2px;
+    top: 50px;
+    width: 246px;
+    height: 51px;
+
+}
+.tstm-arrow
+{ 
+    background-color: transparent;
+    border:0px;
+}
+.tstm-arrow:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.tstm-item
+{
+    position: relative;
+    background: #A7E1FF;
+    height: 369px;
+    width: 233px;
+}
+.tstm-item-pic
+{
+    position: absolute;
+    height: 52px;
+    width: 52px;
+    left: 20px;
+    top: 22px;
+}
+.one
+{
+    background-image: url(../../assets/icons/one.png);
+}
+.two
+{
+    background-image: url(../../assets/icons/two.png);
+}
+.three
+{
+    background-image: url(../../assets/icons/three.png);
+}
+.four
+{
+    background-image: url(../../assets/icons/four.png);
+}
+.tstm-item-block
+{
+    position: absolute;
+    top: 30px;
+    left: 81px;
+    width: 109px;
+    height: 37px;
+   
+}
+.tstm-item-text
+{
+    position: absolute;
+    top: 92px;
+    left: 19px;
+    height: 247px;
+    width: 193px;
+ 
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 120%;
+}
+.tstm-item-name
+{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+/* or 19px */
+    text-align: center;
+    position: absolute;
+    height: 19px;
+}
+.onen
+{
+    width: 109px;
+}
+.twon
+{
+    width: 81px;
+}
+.threen
+{
+    width: 87px;
+}
+.fourn
+{
+    width: 72px;
+}
+.tstm-coin
+{
+    position: absolute;
+    left: 0px;
+    bottom: 1px;
+    height: 12px;
+    width: 12px;
+ 
+    background-image: url(../../assets/icons/money.png);
+}
+.tstm-value
+{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 14px;
+/* or 14px */
+    text-align: center;
+    position: absolute;
+    
+    left: 15px;
+    bottom: 1px;
+    height: 14px;
+    width: 28px;
+}
+.footer
+{
+    width: 100%;
+    height: 270px;
+    background-color: #DFF5B0;
+    position: relative;
+}
+.field
+{
+   position: absolute;
+   top: -20px;
+   left: 17px;
+    width: 1909px;
+    height: 270px;
+   display: flex;
+    background-image: url(../../assets/images/field.png);
+    
+    background-repeat: no-repeat;
+}
+.f-main-cont
+{
+    position: absolute;
+    left: 380px;
+    top: 79px;
+    width: 1159.35px;
+    height: 171px;
+
+    display: flex;
+flex-direction: column;
+justify-content: space-between;
+
+}
+.f-main
+{   
+    
+    width: 1159.35px;
+}
+.fup
+{
+    height: 57px;
+    position: relative;
+}
+
+.logo_zoo-foot{
+    background-image: url(../../assets/icons/logof.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    height: 50px;
+    width: 98px;
+    border: 0px;
+   
+}
+.logo_zoo-foot:hover, .logo-zoo:hover
+{
+    cursor: pointer;
+}
+.logo_zoo-foot:active, /* FOR FUTURE BUTTON OUTLINING*/
+.logo_zoo-foot:focus
+{
+    outline: none;
+}
+.logo_zoo:hover, .logo:hover
+{
+    cursor: pointer;
+}
+.logo_zoo:active, /* FOR FUTURE BUTTON OUTLINING*/
+.logo_zoo:focus
+{
+    outline: none;
+}
+
+.foot-button {
+   top: 1px;
+    background: #70CB0E;
+    border-radius: 30px;
+    border: 0px;
+position: absolute;
+left: 198px;
+    
+    width: 230px;
+    height: 50px;
+
+}
+.foot-am
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 48px;
+    height: 57px;
+    position: absolute;
+    left: 590px;
+    top: 2px;
+}
+.foot-cf
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    left: 759px;
+    top: 2px;
+    width: 87px;
+    height: 57px;
+}
+.foot-link {
+    text-decoration: none;
+    color: #000000;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+}
+.foot-link:hover
+{
+    cursor: pointer;
+    transform: scale(1.15);
+}
+.foot-media
+{
+    position: absolute;
+    right: 0;
+    top: -15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    width: 190px;
+}
+.one_link
+{
+    height: 40px;
+    width: 41px;
+    text-decoration: none;
+    display: block;
+    
+}
+.one_link:hover
+{
+    
+}
+.media_link
+{
+    list-style: none;
+    
+}
+.inst
+{
+    background-image: url(../../assets/icons/Insta.png);
+}
+.fb
+{
+    background-image: url(../../assets/icons/Facebook.png);
+}
+.twit
+{
+    background-image: url(../../assets/icons/Twitter.png);
+}
+.tube
+{
+    background-image: url(../../assets/icons/Youtube.png);
+}
+.media_link:hover
+{   
+    cursor: pointer;
+    
+}
+.fdown
+{
+    height: 50px;
+
+position: relative;
+}
+.RS
+{
+    height: 50px;
+    width: 141px;
+margin-bottom: 0px;
+margin-left: 0px;
+}
+.YEM
+{
+    height: 50px;
+    width: 97px;
+    margin-left: 53px;
+    margin-bottom: 0px;
+}
+.copyright
+{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    margin-left: 72px;
+    position: absolute;
+    left: 300px;
+    bottom: 0px;
+}
+.author
+{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    margin-left: 210px;
+   
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+.foot-button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.tstm-button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.hiw,.paf,.tstm,.piz
+{
+    margin-left: 9px;
+}
