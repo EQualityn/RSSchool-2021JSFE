@@ -5,6 +5,13 @@
     font-family: SceneW01-Black;
     src: url(../../assets/fonts/12309.ttf);
 }
+
+@media screen and (min-width: 1040px) {
+    body {
+      display: block;
+    }
+  }
+ 
 .visuallyhidden
 {
     position: absolute;
@@ -18,18 +25,26 @@
     border: 0;
 }
 body {
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: #ffffff;
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
 }
+html
+{
+    
+    overflow-x: hidden;
+}
 
 #head {
-
+    position: relative;
+    left: -70px;
     height: 80px;
-    width: 100%;
+    
     /* background-color: darkgray; */
     display: flex;
 
@@ -37,15 +52,59 @@ body {
 }
 
 .header {
+    display: flex;
+    position: relative;
+    justify-content: center;
     width: 100%;
     height: 698px;
     left: 0%;
     right: 0%;
     top: 0%;
     bottom: 84.12%;
-    background: radial-gradient(71.89% 152.21% at 40.1% 50%, #B5E6FF 0%, #59C3FB 100%);
+              background: radial-gradient(71.89% 152.21% at 40.1% 50%, #B5E6FF 0%, #59C3FB 100%);
+    background-repeat: no-repeat;
+}
+.head-wrapper
+{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    background: 
+    url(../../assets/images/drops1.png) 734px no-repeat,
+                      url(../../assets/images/panda\ 1.svg) 796px 55px no-repeat,
+                      url(../../assets/images/drops2.png) 149px no-repeat;
+}
+/* .panda-pic {
+
+    position: absolute;
+    left: 866px;
+    top: 55px;
+    background-size: 696px 689px;
+    background-image: url(../../assets/images/panda\ 1.svg);
+    background-repeat: no-repeat;
+    height: 692px;
+    width: 693px;
 }
 
+.bubble-1 {
+    top: -2px;
+    position: absolute;
+    left: 220px;
+    background-image: url(../../assets/images/drops2.png);
+    background-repeat: no-repeat;
+    height: 905px;
+    width: 1046px;
+}
+
+.bubble-2 {
+    left: -60px;
+    bottom: -15px;
+    position: absolute;
+    background-image: url(../../assets/images/drops1.png);
+    background-repeat: no-repeat;
+    height: 764px;
+    width: 834px;
+} */
 .logo_zoo {
     background-image: url(../../assets/icons/logo.svg);
     background-color: transparent;
@@ -125,43 +184,12 @@ line-height: 21px;
     cursor:default;
     transform: scale(1);
 }
-.panda-pic {
 
-    position: absolute;
-    left: 866px;
-    top: 55px;
-    background-size: 696px 689px;
-    background-image: url(../../assets/images/panda\ 1.svg);
-    background-repeat: no-repeat;
-    height: 692px;
-    width: 693px;
-}
-
-.bubble-1 {
-    top: -2px;
-    position: absolute;
-    left: 220px;
-    background-image: url(../../assets/images/drops2.png);
-    background-repeat: no-repeat;
-    height: 905px;
-    width: 1046px;
-}
-
-.bubble-2 {
-    left: -60px;
-    bottom: -15px;
-    position: absolute;
-    background-image: url(../../assets/images/drops1.png);
-    background-repeat: no-repeat;
-    height: 764px;
-    width: 834px;
-}
 
 .head-text {
     height: 252px;
     width: 570px;
-    margin-left: 380px;
-    margin-top: 128px;
+   
     font-family: SceneW01-Black, sans-serif;
     font-style: normal;
     font-weight: 900;
@@ -172,7 +200,9 @@ line-height: 21px;
     letter-spacing: 0.03em;
 
     /* Style_2 */
-
+    right: 648px;
+    top: 207px;
+position: relative;
     color: #000000;
 
 }
@@ -180,15 +210,13 @@ line-height: 21px;
 .head-play__button {
     width: 233px;
     height: 51px;
-
+position: relative;
+top: 510px;
+right: 1217px;
     background: #70CB0E;
     border-radius: 30px;
     border: 0px;
-    position: relative;
-    left: 382px;
-    top: 50px;
-    width: 233px;
-    height: 51px;
+   
 
 }
 
@@ -219,7 +247,7 @@ line-height: 21px;
 }
 
 .hiw {
-    width: 100%;
+    width: auto;
     height: 983px;
     background-color: #ffffff;
     display: flex;
@@ -253,54 +281,52 @@ line-height: 21px;
     justify-content: center;
     position: relative;
 }
-.hiw__animal-smol
+.hiw__animal
 {
     list-style-type: none;
     position: absolute;
     width: 250px;
     height: 350px;
-    z-index: 1;
 }
 .sl {
+    z-index: 1;
 left: 9px;
 }
 .sr
 {
+    z-index: 1;
     left: 1130px;
 }
-.hiw__animal-medium
+.md
 {
-    list-style-type: none;
-     position: absolute;
-    width: 300px;
-    height: 400px;
-    z-index: 2;
-}
-.ml {
-    left: 239px;
-}
-.mr {
-    left: 850px;
-}
-.hiw__animal-mid {
-    list-style-type: none;
-    position:absolute;
-    left: 260px;
-    width: 350px;
-    height: 450px;
+    left: 570px;
+   transform: scale(1.4, 1.286);
     z-index: 3;
 }
+
+.ml {
+    left: 264px;
+    transform: scale(1.2, 1.143);
+    z-index: 2;
+    
+}
+.mr {
+    transform: scale(1.2, 1.143);
+    right: 280px;
+    z-index: 2;
+}
+
 
 
 .hiw__app-descr {
     margin-top: 17px;
-    width: 933px;
+    width: 60%;
     height: 126px;
     font-family: 'Roboto';
     font-style: normal;
     font-size: 16px;
     line-height: 21px;
-
+    overflow-y: hidden;
     text-align: center;
 
     /* Style_2 */
@@ -309,7 +335,8 @@ left: 9px;
 }
 .piz
 {
-    width: 100%;
+    
+    width: auto;
     height: 1058px;
     display: flex;
     flex-direction: column;
@@ -380,7 +407,7 @@ left: 9px;
 {
     position: relative;
     height: 600px;
-    width: 100%;
+    width: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -410,8 +437,8 @@ left: 9px;
     position: absolute;
     height: 501.63px;
     width: 580.48px;
-  right: 616px;
-  top: 15px;
+  top: 14px;
+ 
     padding: 0;
     background-image: url(../../assets/images/Arrow.png);
 }
@@ -470,7 +497,7 @@ text-align:center;
 .tstm
 {
     height: 797px;
-    width: 100%;
+    width: auto;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -627,30 +654,33 @@ line-height: 14px;
 }
 .footer
 {
+   position: relative;
     width: 100%;
     height: 270px;
-    background-color: #DFF5B0;
-    position: relative;
+        display: flex;
+    align-items: center;
+    justify-content: center;
+background:
+#DFF5B0;
+
 }
-.field
+
+.foot-wrapper
 {
-   position: absolute;
-   top: -20px;
-   left: 17px;
-    width: 1909px;
-    height: 270px;
-   display: flex;
-    background-image: url(../../assets/images/field.png);
-    
-    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+  
+    margin: 0;   
+    top: -10px;
+    right: -15px;
+    position: relative;
+        background: url(../../assets/images/field.png) 100% no-repeat;
+        width: 1872px;
+        height: 290px;
 }
 .f-main-cont
 {
-    position: absolute;
-    left: 380px;
-    top: 79px;
-    width: 1159.35px;
-    height: 171px;
+   
 
     display: flex;
 flex-direction: column;
@@ -666,6 +696,8 @@ justify-content: space-between;
 {
     height: 57px;
     position: relative;
+    top: 97px;
+    left: -7px;
 }
 
 .logo_zoo-foot{
@@ -799,7 +831,8 @@ left: 198px;
 .fdown
 {
     height: 50px;
-
+    bottom: 21px;
+    left: -5px;
 position: relative;
 }
 .RS
@@ -851,5 +884,190 @@ margin-left: 0px;
 }
 .hiw,.paf,.tstm,.piz
 {
-    margin-left: 9px;
+    margin-left: 19px;
+}
+@media (max-width:1199px) {
+    .header
+    {
+        left: 0px;
+        max-width: 1160px;
+    }    
+    .sidebar
+    {
+        display: none;
+    }
+     }
+     @media (max-width:1200px) and (min-width:641px){
+     #head
+     {
+         left: 0px;
+         width: 1200px;
+     }
+    }
+     
+     @media (max-width:1198px) and (min-width:320px)
+     {
+        .footer
+        {
+            height: 355px;
+            width: 1199px;
+        }
+        .fup
+        {
+            top: 20px;
+        }
+        .logo-foot
+        {
+            top: 36px;
+            position: relative;
+            left: 4px;
+        }
+        .fdown
+        {
+            position: relative;
+            bottom: 78px;
+            left: -5px;
+        }
+        .foot-button
+        {
+            position: relative;
+            top: 126px;
+            width: 210px;
+            left: 290px;
+        }
+        .foot-am
+        {
+            left: 158px;
+            top: 38px;
+        }
+        .foot-cf
+        {
+            left: 262px;
+            top: 38px;
+        }
+        .foot-media
+        {
+            left: 372px;
+            top: 20px;
+        }
+    .YEM
+    {
+        position: relative;
+        left: 216px;
+        bottom: 50px;
+    }
+    .copyright
+    {
+        position: relative;
+        bottom: -33px;
+        left: 25px;
+    }
+    .author
+    {
+       margin-left: 0px;
+       position: relative;
+        bottom: 0px;
+        left: -275px;
+    }
+     }
+     @media (max-width:480px) {
+    .burger_menu
+    {
+        left: 86%;
+    } 
+    }
+     @media (max-width:320px) {
+        
+        .footer
+        {
+            height: 720px;
+            width: 1200px;
+           
+        }
+        .burger_menu
+        {
+            left: 86%;
+        }
+        .foot-wrapper
+        {
+            top: 30px;
+            left: 0;
+        }
+       .f-main-cont
+       {
+           height: 720px;
+           position: relative;
+           top: -200px;
+           left: -15px;
+       }
+        .fup
+        {
+            top: 20px;
+        }
+        .logo-foot
+        {
+            top: 15px;
+            position: relative;
+            left: 107px;
+        }
+        .fdown
+        {
+            position: relative;
+            bottom: 8px;
+            left: 50px;
+        }
+        .foot-button
+        {
+            position: relative;
+            top: 273px;
+            width: 210px;
+            left: -50px;
+        }
+        .foot-am
+        {
+            left: 134px;
+            top: 115px;
+        }
+        .foot-cf
+        {
+            left: 113px;
+            top: 186px;
+        }
+        .foot-media
+        {
+            left: 22px;
+            top: 378px;
+        }
+    .YEM
+    {
+        position: relative;
+        left: 153px;
+        bottom: 208px;
+    }
+    .RS
+    {
+        position:relative;
+        left: -50px;
+        bottom: 158px;
+    }
+    .copyright
+    {
+        position: relative;
+        bottom: 128px;
+        left: -57px;
+        width: 10px;
+    }
+    .author
+    {
+       margin-left: 0px;
+       position: relative;
+        bottom: 158px;
+        left: -470px;
+    }
+    .content
+    {
+        position: relative;
+        width: 1200px; 
+    }
+    
 }
