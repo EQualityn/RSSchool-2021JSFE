@@ -11,6 +11,7 @@
       display: block;
     }
   }
+ 
 .visuallyhidden
 {
     position: absolute;
@@ -32,6 +33,11 @@ body {
     padding: 0;
     width: 100%;
     height: 100%;
+}
+html
+{
+    
+    overflow-x: hidden;
 }
 
 #head {
@@ -60,13 +66,13 @@ body {
 }
 .head-wrapper
 {
-    width: 1920px;
+    width: auto;
     display: flex;
     justify-content: center;
     background: 
-    url(../../assets/images/drops1.png) 804px no-repeat,
-                      url(../../assets/images/panda\ 1.svg) 866px 55px no-repeat,
-                      url(../../assets/images/drops2.png) 219px no-repeat;
+    url(../../assets/images/drops1.png) 734px no-repeat,
+                      url(../../assets/images/panda\ 1.svg) 796px 55px no-repeat,
+                      url(../../assets/images/drops2.png) 149px no-repeat;
 }
 /* .panda-pic {
 
@@ -241,7 +247,7 @@ right: 1217px;
 }
 
 .hiw {
-    width: 100%;
+    width: auto;
     height: 983px;
     background-color: #ffffff;
     display: flex;
@@ -320,7 +326,7 @@ left: 9px;
     font-style: normal;
     font-size: 16px;
     line-height: 21px;
-
+    overflow-y: hidden;
     text-align: center;
 
     /* Style_2 */
@@ -329,7 +335,8 @@ left: 9px;
 }
 .piz
 {
-    width: 100%;
+    
+    width: auto;
     height: 1058px;
     display: flex;
     flex-direction: column;
@@ -400,7 +407,7 @@ left: 9px;
 {
     position: relative;
     height: 600px;
-    width: 100%;
+    width: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -490,7 +497,7 @@ text-align:center;
 .tstm
 {
     height: 797px;
-    width: 100%;
+    width: auto;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -668,9 +675,8 @@ background:
     right: -15px;
     position: relative;
         background: url(../../assets/images/field.png) 100% no-repeat;
-        width: 1909px;
-        height: 340px;
-       
+        width: 1872px;
+        height: 290px;
 }
 .f-main-cont
 {
@@ -690,7 +696,7 @@ justify-content: space-between;
 {
     height: 57px;
     position: relative;
-    top: 124px;
+    top: 97px;
     left: -7px;
 }
 
@@ -825,7 +831,7 @@ left: 198px;
 .fdown
 {
     height: 50px;
-    bottom: 44px;
+    bottom: 21px;
     left: -5px;
 position: relative;
 }
@@ -878,5 +884,190 @@ margin-left: 0px;
 }
 .hiw,.paf,.tstm,.piz
 {
-    margin-left: 9px;
+    margin-left: 19px;
+}
+@media (max-width:1199px) {
+    .header
+    {
+        left: 0px;
+        max-width: 1160px;
+    }    
+    .sidebar
+    {
+        display: none;
+    }
+     }
+     @media (max-width:1200px) and (min-width:641px){
+     #head
+     {
+         left: 0px;
+         width: 1200px;
+     }
+    }
+     
+     @media (max-width:1198px) and (min-width:320px)
+     {
+        .footer
+        {
+            height: 355px;
+            width: 1199px;
+        }
+        .fup
+        {
+            top: 20px;
+        }
+        .logo-foot
+        {
+            top: 36px;
+            position: relative;
+            left: 4px;
+        }
+        .fdown
+        {
+            position: relative;
+            bottom: 78px;
+            left: -5px;
+        }
+        .foot-button
+        {
+            position: relative;
+            top: 126px;
+            width: 210px;
+            left: 290px;
+        }
+        .foot-am
+        {
+            left: 158px;
+            top: 38px;
+        }
+        .foot-cf
+        {
+            left: 262px;
+            top: 38px;
+        }
+        .foot-media
+        {
+            left: 372px;
+            top: 20px;
+        }
+    .YEM
+    {
+        position: relative;
+        left: 216px;
+        bottom: 50px;
+    }
+    .copyright
+    {
+        position: relative;
+        bottom: -33px;
+        left: 25px;
+    }
+    .author
+    {
+       margin-left: 0px;
+       position: relative;
+        bottom: 0px;
+        left: -275px;
+    }
+     }
+     @media (max-width:480px) {
+    .burger_menu
+    {
+        left: 86%;
+    } 
+    }
+     @media (max-width:320px) {
+        
+        .footer
+        {
+            height: 720px;
+            width: 1200px;
+           
+        }
+        .burger_menu
+        {
+            left: 86%;
+        }
+        .foot-wrapper
+        {
+            top: 30px;
+            left: 0;
+        }
+       .f-main-cont
+       {
+           height: 720px;
+           position: relative;
+           top: -200px;
+           left: -15px;
+       }
+        .fup
+        {
+            top: 20px;
+        }
+        .logo-foot
+        {
+            top: 15px;
+            position: relative;
+            left: 107px;
+        }
+        .fdown
+        {
+            position: relative;
+            bottom: 8px;
+            left: 50px;
+        }
+        .foot-button
+        {
+            position: relative;
+            top: 273px;
+            width: 210px;
+            left: -50px;
+        }
+        .foot-am
+        {
+            left: 134px;
+            top: 115px;
+        }
+        .foot-cf
+        {
+            left: 113px;
+            top: 186px;
+        }
+        .foot-media
+        {
+            left: 22px;
+            top: 378px;
+        }
+    .YEM
+    {
+        position: relative;
+        left: 153px;
+        bottom: 208px;
+    }
+    .RS
+    {
+        position:relative;
+        left: -50px;
+        bottom: 158px;
+    }
+    .copyright
+    {
+        position: relative;
+        bottom: 128px;
+        left: -57px;
+        width: 10px;
+    }
+    .author
+    {
+       margin-left: 0px;
+       position: relative;
+        bottom: 158px;
+        left: -470px;
+    }
+    .content
+    {
+        position: relative;
+        width: 1200px; 
+    }
+    
 }
