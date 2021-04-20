@@ -649,13 +649,14 @@ text-align: center;
     background-image: url(../../../assets/icons/the-allig.png);
     top: -20px;
     right: 42px;
-}
-.monke-pic
-{
     border: 2px solid #70CB0E;
     border-radius: 34px;
     background-color:  #70CB0E;
     box-shadow: 0 0 0 2px  #70CB0E;
+}
+.monke-pic
+{
+    
     background-image: url(../../../assets/icons/the-monke.png);
     top: -56px;
     right: 42px;
