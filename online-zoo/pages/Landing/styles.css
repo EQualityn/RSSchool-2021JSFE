@@ -845,9 +845,10 @@ margin-left: 0px;
 .YEM
 {
     height: 50px;
+    position: relative;
     width: 97px;
-    margin-left: 53px;
-    margin-bottom: 0px;
+    left: 197px;
+    bottom: 50px;
 }
 .copyright
 {
