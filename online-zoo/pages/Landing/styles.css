@@ -923,7 +923,7 @@ margin-left: 0px;
         {
            width: 214px;  
            height: 180px; 
-          left: -58vw;
+          left: -61vw;
          font-size: 50px;
           top: 130px;
         }
@@ -1081,7 +1081,28 @@ margin-left: 0px;
     } 
     } */
      @media (max-width:320px) {
+        .logo
+        {
+            margin-left: 75vw;
+        }
+         #head
+         {
         
+           
+            height: 80px;
+         }
+        .head-text
+        {
+           width: 214px;  
+           height: 180px; 
+          left: -26vw;
+         font-size: 50px;
+          top: 130px;
+        }
+        .head-play__button
+        {
+            right: 95vw;
+        }
         .footer
         {
             height: 720px;
@@ -1090,7 +1111,7 @@ margin-left: 0px;
         }
         .burger_menu
         {
-            left: 86%;
+            left: 153%;
         }
         .foot-wrapper
         {
