@@ -38,7 +38,7 @@ body {
     justify-content: center;
     width: 100%;
    
-              background: #A7E1FF;
+              
     background-repeat: no-repeat;
 }
 #head {
@@ -823,6 +823,20 @@ left: 20px;
 {
     cursor: pointer;
 }
+.side-btn
+{
+    display: none;
+    position: absolute;
+    background: url(../../../assets/images/side-btn.svg);
+    left: 10px;
+    height: 45px;
+    width: 45px;
+    z-index: 5;
+}
+.side-btn:hover
+{
+    cursor: pointer;
+}
 @media (max-width:1199px) {
     .header
     {
@@ -832,6 +846,10 @@ left: 20px;
     .sidebar
     {
         display: none;
+    }
+    .side-btn
+    {
+        display: block;
     }
      }
      @media (max-width:1200px) and (min-width:641px){
