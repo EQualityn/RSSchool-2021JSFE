@@ -46,8 +46,8 @@ body {
 position: absolute;
 
 height: 80px;
-
-width: 1160px;
+left: 0px;
+width: 100%;
 
 /* background-color: darkgray; */
 
