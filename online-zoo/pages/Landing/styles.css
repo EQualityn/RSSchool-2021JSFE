@@ -892,7 +892,7 @@ margin-left: 0px;
     .header
     {
         left: 0px;
-        max-width: 1160px;
+        max-width: 1200px;
     }    
     .sidebar
     {
@@ -905,10 +905,33 @@ margin-left: 0px;
          left: 0px;
          width: 1200px;
      }
-    }
      
-     @media (max-width:1198px) and (min-width:320px)
+    }
+    @media (max-width: 640px) and (min-width: 320px)
      {
+        .logo
+        {
+            margin-left: -40vw;
+        }
+         #head
+         {
+        
+           
+            height: 80px;
+         }
+        .head-text
+        {
+           width: 214px;  
+           height: 180px; 
+          left: -58vw;
+         font-size: 50px;
+          top: 130px;
+        }
+        .head-play__button
+        {
+            right: 95vw;
+        }
+       
         .footer
         {
             height: 355px;
@@ -972,12 +995,91 @@ margin-left: 0px;
         left: -275px;
     }
      }
-     @media (max-width:480px) {
+     @media (max-width:1199px) and (min-width:640px)
+     {
+        .logo
+        {
+            margin-left: 20vw;
+        }
+         #head
+         {
+        
+           
+            height: 80px;
+         }
+        .head-text
+        {
+           width: 214px;  
+           height: 180px; 
+          left: -76vw;
+         font-size: 50px;
+          top: 130px;
+        }
+        .head-play__button
+        {
+            right: 95vw;
+        }
+       
+     }
+     
+     .burger_menu
+{display: none;}
+
+
+.burger_menu,
+.burger_menu::before,
+.burger_menu::after {
+    position: absolute;
+    left: 20%;
+    width: 36px;
+    height: 3px;
+    z-index: 4;
+    background-color: black;
+}
+
+.burger_menu::before {
+    left: calc(100% - 36px);
+    content: "";
+    transform:translateY(-10px) ;
+}
+
+.burger_menu::after {
+    left: calc(100% - 36px);
+    content: "";
+    transform:translateY(10px)
+}
+@media (max-width: 639px){
+    .body
+    {
+    max-width: 640px;   
+    }
+    
+    #head 
+    {
+        left: 0px;
+        width: 100vw;
+        height: 80px;
+    }
+  
+    .logo
+    {
+        margin-left: 38%;
+    }
+        .burger_menu {
+            display: block;
+            position: absolute;
+        left: 125vw;
+        }
+         .head_info {
+            display: none;
+        }
+    }
+     /* @media (max-width:480px) {
     .burger_menu
     {
         left: 86%;
     } 
-    }
+    } */
      @media (max-width:320px) {
         
         .footer
