@@ -87,9 +87,8 @@ function saveImg() {
         canvas.height = img.height;
         const ctx = canvas.getContext("2d");
 
-        let blur = inputs[0].value * image.naturalHeight / image.height.toString() + inputs[0].dataset.sizing;
-        let hue = inputs[4].value.toString() + inputs[4].dataset.sizing;
-        ctx.filter = `blur(${blur}) invert(${inputs[1].value/100}) sepia(${inputs[2].value/100}) saturate(${inputs[3].value/100}) hue-rotate(${hue})`;
+        let blur = inputs[0].value * image.naturalHeight / image.height.toString();
+        ctx.filter = `blur(${blur}px) invert(${inputs[1].value/100}) sepia(${inputs[2].value/100}) saturate(${inputs[3].value/100}) hue-rotate(${inputs[4].value}deg)`;
 
         ctx.drawImage(img, 0, 0);
         const link = document.createElement('a');
