@@ -8,8 +8,21 @@
     <title>Landing</title>
   </head>
   <body>
+      <div class="form-feedback hidden" id="form-feedback">
+        <form action="" id ="form">
+          
+          <input type="text" id="name-feedback" required placeholder="Name">
+        
+          <input type="email" id="email-feedback" required placeholder="Email">
+          
+          <textarea id="text-feedback" required placeholder="Your text here (300 max)"></textarea>
+          <button class="button invalid" id="submit-feedback" type="submit">Submit</button>
+        </form>
+      </div>
+      <div class="cover hidden" id="cover"></div>
     <h1 class="visuallyhidden">Online zoo</h1>
     <section class="header">
+    
       <div class="head-wrapper">
         <header id="head">
           <a class="logo" href="../Landing/Landing.html">
@@ -26,7 +39,7 @@
               <a href="../../pages/zoos/panda/panda.html" class="head-link">Zoos</a>
             </div>
             <div class="head_info__element">
-              <a href="../Error 404/Error 404.html" class="head-link">Contact us</a>
+              <a class="head-link" id="contactUs">Contact us</a>
             </div>
             <div class="head_info__element">
               <a href="https://www.figma.com/file/aBvQMVmI665DtzprpiniuH/online-zoo" class="head-link">Design</a>
@@ -309,5 +322,6 @@
         </div>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

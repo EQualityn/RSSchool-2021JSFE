@@ -6,12 +6,14 @@
     src: url(../../assets/fonts/12309.ttf);
 }
 
-@media screen and (min-width: 1040px) {
-    body {
-      display: block;
+
+@media (max-width:1919px){
+    html
+    {
+        overflow-x: hidden;
+        width: 100%;   
     }
-  }
- 
+}
 .visuallyhidden
 {
     position: absolute;
@@ -35,11 +37,7 @@ body {
     height: 100%;
     overflow-x: hidden;
 }
-html
-{
-    width: 100%;
-    overflow-x: hidden;
-}
+
 
 #head {
     position: relative;
@@ -171,6 +169,118 @@ line-height: 21px;
 
 }
 
+.cover {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 10;
+  }
+  #form
+  {
+    height: 336px;
+    width: 470px;
+    margin-top: 50px;
+    margin: 80px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form-feedback {
+    width: 630px;
+    height: 436px;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    position: fixed;
+    z-index: 100;
+  
+    top: calc(50vh - 320px);
+    left: calc(50vw - 240px);
+  
+    background-color: #ffffff;
+  }
+  #name-feedback
+  {
+    border: 1px solid #9CA498;
+      width: 470px;
+      height: 40px;
+      background: #DFF5B0;
+      margin-bottom: 8px;
+      font-family: 'Roboto';
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+  }
+  #email-feedback
+  {
+    border: 1px solid #9CA498;
+      width: 470px;
+      height: 40px;
+      background: #DFF5B0;
+      margin-bottom: 8px;
+      font-family: 'Roboto';
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+  }
+  #text-feedback
+  {
+    border: 1px solid #9CA498;
+      width: 470px;
+      height: 180px;
+      background: #DFF5B0;
+      margin-bottom: 20px;
+      font-family: 'Roboto';
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+  }
+  #name-feedback,#text-feedback,#email-feedback:focus
+  {
+    outline: none;
+  }
+  #submit-feedback {
+        width: 177px;
+        height: 50px;
+        background: #70CB0E;
+        border-radius: 30px;
+        border: 0px;
+        font-family: 'Roboto';
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 21px;
+  }
+  #submit-feedback:hover
+  {
+      cursor: pointer;
+  }
+  
+  #submit-feedback.invalid {
+    background-color:  #60cb0e83;
+    
+  }
+  #submit-feedback.invalid:hover
+  {
+      cursor: default;
+  }
+  
+  
+  .hidden {
+    display: none;
+  }
+  body.notScrollable {
+    overflow-y: hidden;
+  }
 .head-link:hover {
     cursor: pointer;
     transform: scale(1.15);
