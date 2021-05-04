@@ -9,13 +9,13 @@
   </head>
   <body>
       <div class="form-feedback hidden" id="form-feedback">
-        <form action="" id ="form">
-          
+        <form action="" id ="form-feed">
+          <button class="closeBtn"></button>
           <input type="text" id="name-feedback" required placeholder="Name">
         
           <input type="email" id="email-feedback" required placeholder="Email">
           
-          <textarea id="text-feedback" required placeholder="Your text here (300 max)"></textarea>
+          <textarea id="text-feedback" required placeholder="Your text here (280 max)"></textarea>
           <button class="button invalid" id="submit-feedback" type="submit">Submit</button>
         </form>
       </div>
@@ -262,6 +262,48 @@
         <span class="head-play__button__play">Leave feedback</span>
       </button>
     </section>
+    <div class="form-donat hidden" id="form-donat">
+      <form action="" id ="form-don">
+        <button class="closeBtn"></button>
+        <form action="" id="donat-pick-animal">
+          <select name="hero" class="donat-selected-animal">
+            <option value="" disabled selected class="donat-animal">Animal</option>
+          <option value="t1" class="donat-animal">Alligator</option>
+          <option value="t2" class="donat-animal">Panda</option>
+          <option value="t3" class="donat-animal">Eagle</option>
+          <option  value="t4" class="donat-animal">Gorilla</option>
+          </select>
+         </form> 
+        <div class="form-money">
+          <input type="text" id="value-donat" required placeholder="Donat">
+        <form class="donat-usd">
+          <select name="hero" class="donat-selected-animal currency">
+            <option value="" disabled selected class="donat-currency">Select your currency</option>
+            <option value="t1" class="donat-currency">USD</option>
+            <option value="t2" class="donat-currency">EUR</option>
+            </select>
+           </form> 
+      </div>
+        <textarea id="text-donat" required placeholder="Your text here (280 max)"></textarea>
+        <button class="button invalid" id="submit-donat" type="submit">Next</button>
+      </form>
+    </div>
+
+
+    <div class="form-bank hidden" id="form-bank">
+     
+        <button class="closeBtn"></button>
+        <input type="number"  class="bank-field card-number" id="cardnumber" required placeholder="Card Number">
+        <input type="number"  class="bank-field month" id="month" required placeholder="MM">
+        <input type="number"  class="bank-field year" id="year" required placeholder="YY">
+        <input type="text" class="bank-field cardholder" id="cardholder" required placeholder="Cardholder Name">
+        <input type="number"  class="bank-field cvc" id="cvc" required placeholder="CVC">
+        
+        <button class="button invalid" id="bank-pay" type="submit">Pay</button>
+      
+    </div>
+
+
     <footer class="footer">
       <div class="foot-wrapper">
         <div class="f-main-cont">
@@ -269,8 +311,8 @@
             <a href="../Landing/Landing.html" class="logo-foot">
               <button class="logo_zoo-foot"></button>
             </a>
-            <button class="foot-button">
-              <span class="head-play__button__play">Donate for volunteers</span>
+            <button class="foot-button" id="footBtn" >
+              <span class="head-play__button__play" >Donate for volunteers</span>
             </button>
             <div class="foot-am">
               <a href="" class="foot-link"
@@ -279,7 +321,7 @@
               <a href="../../pages/Map/Map.html" class="foot-link">Map</a>
             </div>
             <div class="foot-cf">
-              <a href="../Error 404/Error 404.html" class="foot-link"
+              <a class="foot-link" id="contactUsF"
                 >Contact us</a
               >
               <a href="" class="foot-link">Feedback</a>
