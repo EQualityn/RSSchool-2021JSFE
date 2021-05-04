@@ -489,6 +489,443 @@ margin-left: 0px;
     cursor: pointer;
     transform: scale(1.05);
 }
+
+
+
+.cover {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 10;
+  }
+  #form-feed
+  {
+    height: 336px;
+    width: 470px;
+    margin-top: 50px;
+    margin: 80px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form-feedback {
+    width: 630px;
+    height: 436px;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    position: fixed;
+    z-index: 100;
+  
+    top: calc(50vh - 220px);
+    left: calc(50vw - 340px);
+  
+    background-color: #ffffff;
+  }
+  #name-feedback
+  {
+    border: 1px solid #9CA498;
+      width: 470px;
+      height: 40px;
+      background: #DFF5B0;
+      margin-bottom: 8px;
+      font-family: 'Roboto';
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+  }
+  #email-feedback
+  {
+    border: 1px solid #9CA498;
+      width: 470px;
+      height: 40px;
+      background: #DFF5B0;
+      margin-bottom: 8px;
+      font-family: 'Roboto';
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+  }
+  #text-feedback
+  {
+    border: 1px solid #9CA498;
+      width: 470px;
+      height: 180px;
+      background: #DFF5B0;
+      margin-bottom: 20px;
+      font-family: 'Roboto';
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+  }
+  #name-feedback,#text-feedback,#email-feedback:focus
+  {
+    outline: none;
+  }
+  #submit-feedback {
+        width: 177px;
+        height: 50px;
+        background: #70CB0E;
+        border-radius: 30px;
+        border: 0px;
+        font-family: 'Roboto';
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 21px;
+  }
+  #submit-feedback:hover
+  {
+    cursor: pointer;
+  }
+  #submit-feedback.invalid {
+    background-color:  #60cb0e83;
+  }
+  #submit-feedback.invalid:hover
+  {
+      cursor: default;
+  }
+
+  
+  .hidden {
+    display: none;
+  }
+  body.notScrollable {
+    overflow-y: hidden;
+  }
+    
+
+
+
+
+  #form-don
+  {
+    
+    width: 470px;
+    margin-top: 50px;
+    
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .form-donat {
+    width: 630px;
+    height: 339px;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    position: fixed;
+    z-index: 100;
+  
+    top: calc(50vh - 220px);
+    left: calc(50vw - 340px);
+  
+    background-color: #ffffff;
+  }
+  #value-donat
+  {
+    border: 1px solid #9CA498;
+      width: 303px;
+      height: 39px;
+      margin-right: 8px;
+      margin-bottom: 8px;
+      font-family: 'Roboto';
+font-style: normal;
+font-weight: normal;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+
+font-size: 16px;
+line-height: 19px;
+  }
+  #value-donat::placeholder {
+    text-align: center;
+}
+  .form-money
+  {
+      display: flex;
+  }
+  #text-donat
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #9CA498;
+      width: 472px;
+      height: 85px;
+      margin-bottom: 20px;
+      font-family: 'Roboto';
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+  }
+  #text-donat::placeholder
+  {
+    padding-left: 20px;
+    padding-top: 10px;
+  }
+  .borger
+  {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+      height:39px;
+      width: 476px;
+      margin-bottom: 8px;
+      border: 1px solid #9CA498;
+      background-color: #DFF5B0;
+  }
+  .donat-usd
+  {
+      margin-top: 5px;
+      height: 39px;
+      width: 159px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     
+ 
+  }
+
+  #text-donat,#value-donat,.donat-selected-animal,#email-feedback:focus
+  {
+    outline: none;
+  }
+  #submit-donat {
+        width: 177px;
+        height: 50px;
+        background: #70CB0E;
+        border-radius: 30px;
+        border: 0px;
+        font-family: 'Roboto';
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 21px;
+  }
+  #submit-donat:hover
+  {
+      cursor: pointer;
+  }
+  
+  #submit-donat.invalid {
+    background-color:  #60cb0e83;
+    
+  }
+  #submit-donat.invalid:hover
+  {
+      cursor: default;
+  }
+  
+ 
+  .form-donat.hidden {
+    display: none;
+  }
+
+#donat-pick-animal
+{
+    height:39px;
+    width: 476px;
+    margin-bottom: 8px;
+    border: 1px solid #9CA498;
+    background-color: #DFF5B0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.donat-animal
+{
+    display: flex;
+      justify-content: center;
+      align-items: center;
+    height:39px;
+    width: 476px;
+    margin-bottom: 8px;
+    border: 1px solid #9CA498;
+    background-color: #DFF5B0;
+}
+.donat-selected-animal
+{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    padding-left: 40%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:39px;
+    width: 478px;
+    margin-bottom: 8px;
+    margin-left: -4px;
+    border: 1px solid #9CA498;
+    background-color: #DFF5B0;
+}
+.currency
+{
+      font-family: 'Roboto';
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 21px;
+    background: white;
+    margin-top: 8px;
+    margin-left: 1px;
+    height: 43px;
+    padding-left: 0%;
+    margin-top: 2px;
+}
+.closeBtn,.closeBtnB,.closeBtnD
+{
+    border: white;
+    width: 27px;
+    height: 27px;
+    background-color: white;
+    right: 15px;
+    top: 15px;
+    position: absolute;
+    background-image: url(../../../assets/icons/close.svg);
+}
+.closeBtn,.closeBtnB,.closeBtnD:hover
+{
+    cursor: pointer;
+}
+.form-bank {
+    width: 630px;
+    height: 389px;
+  
+    position: fixed;
+    z-index: 100;
+    background: url(../../../assets/icons/Pay_2.svg);
+    top: calc(50vh - 220px);
+    left: calc(50vw - 340px);
+  
+    background-color: #ffffff;
+  }
+  .form-bank.hidden
+  {
+      display: none;
+  }
+
+#bank-pay {
+    position: absolute;
+    bottom: 40px;
+    left: 240px;
+    width: 150px;
+    height: 40px;
+    background: #70CB0E;
+    border-radius: 30px;
+    border: 0px;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 21px;
+}
+#bank-pay.invalid
+{
+    background-color:  #60cb0e83;
+}
+#bank-pay:hover
+{
+    cursor: pointer;
+}
+#bank-pay.invalid:hover
+{
+    cursor: default;
+}
+.bank-field
+{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+/* Style_6 */
+
+border: 1px solid #9CA498;
+color: #9CA498;
+    height: 37px;
+    display: flex;
+    
+    position: absolute;
+    z-index: 1000;
+}
+.bank-field.card-number
+{
+    width: 306px;
+    top: 85px;
+    left: 76px;
+}
+.bank-field.month
+{
+    width: 80px;
+    top: 133px;
+    left: 76px;
+}
+.bank-field.year
+{
+    width: 80px;
+    top: 133px;
+    left: 166px;
+}
+.bank-field.cardholder
+{
+    width: 306px;
+    top: 181px;
+    left: 76px;
+}
+.bank-field.cvc
+{
+    width: 75px;
+    height: 31px;
+    top: 173px;
+    left: 469px;
+}
+.bank-field:focus
+  {
+    outline: none;
+  }
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+
+
+
+
+
 .head-play__button__play {
     width: 34px;
     height: 21px;

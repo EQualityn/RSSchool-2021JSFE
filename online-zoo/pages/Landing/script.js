@@ -20,43 +20,43 @@ const validate = () => {
     }
 }
 
+if (feedbackButton) {
+    feedbackButton.addEventListener('click', () => {
+        document.body.classList.add('notScrollable');
+        coverElem.classList.remove('hidden');
+        formElem.classList.remove('hidden');
+    });
+    feedbackButtonF.addEventListener('click', () => {
+        document.body.classList.add('notScrollable');
+        coverElem.classList.remove('hidden');
+        formElem.classList.remove('hidden');
+    });
 
-feedbackButton.addEventListener('click', () => {
-    document.body.classList.add('notScrollable');
-    coverElem.classList.remove('hidden');
-    formElem.classList.remove('hidden');
-});
-feedbackButtonF.addEventListener('click', () => {
-    document.body.classList.add('notScrollable');
-    coverElem.classList.remove('hidden');
-    formElem.classList.remove('hidden');
-});
 
+    sendButton.addEventListener('click', () => {
+        if (sendButton.classList.contains('invalid')) return;
+        document.body.classList.remove('notScrollable');
+        coverElem.classList.add('hidden');
+        formElem.classList.add('hidden');
+    });
+
+    nameField.addEventListener('input', () => {
+        validate();
+    });
+
+    emailField.addEventListener('input', () => {
+        validate();
+    });
+
+    textField.addEventListener('input', () => {
+        validate();
+    });
+}
 coverElem.addEventListener('click', () => {
     document.body.classList.remove('notScrollable');
     coverElem.classList.add('hidden');
     formElem.classList.add('hidden');
 });
-
-sendButton.addEventListener('click', () => {
-    if (sendButton.classList.contains('invalid')) return;
-    document.body.classList.remove('notScrollable');
-    coverElem.classList.add('hidden');
-    formElem.classList.add('hidden');
-});
-
-nameField.addEventListener('input', () => {
-    validate();
-});
-
-emailField.addEventListener('input', () => {
-    validate();
-});
-
-textField.addEventListener('input', () => {
-    validate();
-});
-
 const formDonat = document.getElementById('form-donat');
 const donatButton = document.getElementById('footBtn');
 const sendDonat = document.getElementById('submit-donat');
@@ -166,7 +166,8 @@ document.querySelectorAll(".closeBtn").forEach(element => {
     element.onclick = function (event) {
         document.body.classList.remove('notScrollable');
         coverElem.classList.add('hidden');
-        formElem.classList.add('hidden');
+        if (formElem)
+            formElem.classList.add('hidden');
         formDonat.classList.add('hidden');
         formBank.classList.add('hidden');
         event.preventDefault();
