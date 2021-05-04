@@ -1189,7 +1189,7 @@ left: 20px;
     grid-row-gap:20px ;
     grid-template-columns: repeat(2, 1fr);
 }
-.descr
+.descr-item
 {
     display: flex;
     background-color: #a7e1ff;
@@ -1226,18 +1226,66 @@ position: absolute;
 top: 47px;
 left: 20px;
 }
-.descr .popul
-{
 
-}
-.descr .nutri
-{
+/*
+//////////////////////////////////////////////////////////////////////////////////
+*/
+  
+.descr-item {
+    position: relative;
+    height: 61px;
+    background-color: #A7E1FF;
+  }
+  
+  .descr-grid:focus, .descr-grid:active {
+    outline: 0;
+    outline-offset: 0;
+  }
+  
+  .descr-name {
+    display: block;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    padding-top: 4%;
+    margin-left: 4%;
+  }
+  .descr-name:hover
+  {
+      cursor: pointer;
+  }
+  .descr-name:focus {
+    outline: 0;
+  }
+  
+  .descr-name::after {
+    content: url("../../../assets/icons/arrow-top.svg");
+    display: block;
+    margin-left: 86%;
+    margin-top: -7%;
+    
+  }
+  
+  .descr-item[open] {
+   height: 156px;
+  }
+  
+  .descr-item[open] > .descr-name::after {
+    position: absolute;
+    transform: rotate(180deg);
+    margin-top: 0.2%;
+    z-index: 1;
+    margin-left: 81%;
+  }
+  
+  .descr-content {
+    padding-bottom: 2%;
+    margin-top: 1%;
+    margin-left: 4%;
+    width: 460px;
+  }
+  
 
-}
-.descr .habit
-{
-
-}
 .facts .descr-name
 {
     width: 180px;
