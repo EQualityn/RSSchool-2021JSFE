@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../panda/styles.css" />
     <title>Eagle</title>
   </head>
   <body>
@@ -153,16 +153,15 @@
           >
         </div>
         <div class="descr-grid">
-          <div class="descr popul">
-            <span class="descr-name">population</span>
+          <details class="descr-item">
+            <summary class="descr-name">population</summary>
             <span class="descr-content"
               >Today, the population of bald eagles is in minimal danger. The
               total number of individuals is about two hundred thousand.</span
             >
-            <button class="descr-arrow"></button>
-          </div>
-          <div class="descr habit">
-            <span class="descr-name">habitat</span>
+          </details>
+          <details class="descr-item">
+            <summary class="descr-name">habitat</summary>
             <span class="descr-content"
               >A large number of eagles live in the state of Minnesota-about
               1300 pairs. In another US state, Florida, there are about 1,200
@@ -170,31 +169,105 @@
               after laying eggs, with the onset of cold weather, the eagles fly
               south.</span
             >
-            <button class="descr-arrow"></button>
-          </div>
-          <div class="descr nutri">
-            <span class="descr-name">nutrition</span>
+          </details>
+          <details class="descr-item">
+            <summary class="descr-name">nutrition</summary>
             <span class="descr-content"
               >Mostly bald eagles feed on fish or birds. They also hunt ground
               squirrels, rabbits, beavers, raccoons and muskrats. Eagles can
               also attack a baby seal. Eagles also feed on carrion, for example,
               they eat the corpses of large horned animals.</span
             >
-            <button class="descr-arrow"></button>
-          </div>
-          <div class="descr facts">
-            <span class="descr-name">interesting facts</span>
+          </details>
+          <details class="descr-item">
+            <summary class="descr-name">interesting facts</summary>
             <span class="descr-content"
               >Bald eagles can live a long time, with a longevity record of 28
               years in the wild and 36 years in captivity. The bald eagle is the
               national bird of the United States of America.</span
             >
-            <button class="descr-arrow"></button>
-          </div>
+          </details>
         </div>
       </main>
     </div>
+    <div class="cover hidden" id="cover"></div>
+    <div class="form-donat hidden" id="form-donat">
+      <form action="" id="form-don">
+        <button class="closeBtn"></button>
+        <form action="" id="donat-pick-animal">
+          <select name="hero" class="donat-selected-animal">
+            <option value="" disabled selected class="donat-animal">
+              Animal
+            </option>
+            <option value="t1" class="donat-animal">Alligator</option>
+            <option value="t2" class="donat-animal">Panda</option>
+            <option value="t3" class="donat-animal">Eagle</option>
+            <option value="t4" class="donat-animal">Gorilla</option>
+          </select>
+        </form>
+        <div class="form-money">
+          <input type="text" id="value-donat" required placeholder="Donat" />
+          <form class="donat-usd">
+            <select name="hero" class="donat-selected-animal currency">
+              <option value="" disabled selected class="donat-currency">
+                Select your currency
+              </option>
+              <option value="t1" class="donat-currency">USD</option>
+              <option value="t2" class="donat-currency">EUR</option>
+            </select>
+          </form>
+        </div>
+        <textarea
+          id="text-donat"
+          required
+          placeholder="Your text here (280 max)"
+        ></textarea>
+        <button class="button invalid" id="submit-donat" type="submit">
+          Next
+        </button>
+      </form>
+    </div>
 
+    <div class="form-bank hidden" id="form-bank">
+      <button class="closeBtn"></button>
+      <input
+        type="number"
+        class="bank-field card-number"
+        id="cardnumber"
+        required
+        placeholder="Card Number"
+      />
+      <input
+        type="number"
+        class="bank-field month"
+        id="month"
+        required
+        placeholder="MM"
+      />
+      <input
+        type="number"
+        class="bank-field year"
+        id="year"
+        required
+        placeholder="YY"
+      />
+      <input
+        type="text"
+        class="bank-field cardholder"
+        id="cardholder"
+        required
+        placeholder="Cardholder Name"
+      />
+      <input
+        type="number"
+        class="bank-field cvc"
+        id="cvc"
+        required
+        placeholder="CVC"
+      />
+
+      <button class="button invalid" id="bank-pay" type="submit">Pay</button>
+    </div>
     <footer class="footer">
       <div class="foot-wrapper">
         <div class="f-main-cont">
@@ -202,7 +275,7 @@
             <a href="../../Landing/Landing.html" class="logo-foot">
               <button class="logo_zoo-foot"></button>
             </a>
-            <button class="foot-button">
+            <button class="foot-button" id="footBtn">
               <span class="head-play__button__play">Donate for volunteers</span>
             </button>
             <div class="foot-am">
@@ -255,5 +328,6 @@
         </div>
       </div>
     </footer>
+    <script src="../../Landing/script.js"></script>
   </body>
 </html>

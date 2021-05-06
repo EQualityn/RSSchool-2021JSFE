@@ -46,92 +46,172 @@
         </header>
       </div>
     </section>
-    <section class="content">
-      <div class="container">
-        <div id="map">
-          <figure class="USA">
-            <figcaption class="country USAc">USA</figcaption>
-            <img
-              src="../../assets/images/USA.svg"
-              alt="'Merica"
-              class="USA-pic"
-            />
-            <img
-              src="../../assets/icons/point.svg"
-              alt="point eagle"
-              class="point eag"
-            />
-            <img
-              src="../../assets/icons/point.svg"
-              alt="point alligator"
-              class="point allig"
-            />
-            <a href="../zoos/eagle/eagle.html">
-              <figure class="the-animal eagle-pic">
-                <span class="tooltiptext">EAGLE, California, USA</span>
-                <img
-                  src="../../assets/icons/illuminati.svg"
-                  alt=""
-                  class="tooltip-triang"
-                />
-              </figure>
-            </a>
-            <a href="../zoos/alligator/alligator.html">
-              <figure class="the-animal allig-pic">
-                <span class="tooltiptext">ALLIGATOR, Florida, USA</span>
-                <img
-                  src="../../assets/icons/illuminati.svg"
-                  alt=""
-                  class="tooltip-triang"
-                />
-              </figure>
-            </a>
-          </figure>
-          <figure class="DRC">
-            <figcaption class="country DRCc">Eastern DRC</figcaption>
-            <img src="../../assets/images/DRC.svg" alt="DRC" class="DRC-pic" />
-            <img
-              src="../../assets/icons/point.svg"
-              alt="point monke"
-              class="point monke"
-            />
-            <a href="../zoos/gorilla/gorilla.html">
-              <figure class="the-animal monke-pic">
-                <span class="tooltiptext">GORILLA, Eastern DRC</span>
-                <img
-                  src="../../assets/icons/illuminati.svg"
-                  alt=""
-                  class="tooltip-triang"
-                />
-              </figure>
-            </a>
-          </figure>
-          <figure class="China">
-            <figcaption class="country Chinac">China</figcaption>
-            <img
-              src="../../assets/images/China.svg"
-              alt="China"
-              class="China-pic"
-            />
-            <img
-              src="../../assets/icons/point.svg"
-              alt="point panda"
-              class="point panda"
-            />
-            <a href="../zoos/panda/">
-              <figure class="the-animal panda-pic">
-                <span class="tooltiptext">PANDA, China</span>
-                <img
-                  src="../../assets/icons/illuminati.svg"
-                  alt=""
-                  class="tooltip-triang"
-                />
-              </figure>
-            </a>
-          </figure>
-        </div>
+    <section class="content" id="wrapper">
+      <div class="zoom">
+        <button class="zoombtn plus" id="zoomIn">+</button>
+        <button class="zoombtn minus" id="zoomOut">-</button>
       </div>
+      <img src="../../assets/images/map.svg" id="map">
+        <figure class="USA">
+          <figcaption class="country USAc">USA</figcaption>
+          <img
+            src="../../assets/images/USA.svg"
+            alt="'Merica"
+            class="USA-pic"
+          />
+          <img
+            src="../../assets/icons/point.svg"
+            alt="point eagle"
+            class="point eag"
+          />
+          <img
+            src="../../assets/icons/point.svg"
+            alt="point alligator"
+            class="point allig"
+          />
+          <a href="../zoos/eagle/eagle.html">
+            <figure class="the-animal eagle-pic">
+              <span class="tooltiptext">EAGLE, California, USA</span>
+              <img
+                src="../../assets/icons/illuminati.svg"
+                alt=""
+                class="tooltip-triang"
+              />
+            </figure>
+          </a>
+          <a href="../zoos/alligator/alligator.html">
+            <figure class="the-animal allig-pic">
+              <span class="tooltiptext">ALLIGATOR, Florida, USA</span>
+              <img
+                src="../../assets/icons/illuminati.svg"
+                alt=""
+                class="tooltip-triang"
+              />
+            </figure>
+          </a>
+        </figure>
+        <figure class="DRC">
+          <figcaption class="country DRCc">Eastern DRC</figcaption>
+          <img src="../../assets/images/DRC.svg" alt="DRC" class="DRC-pic" />
+          <img
+            src="../../assets/icons/point.svg"
+            alt="point monke"
+            class="point monke"
+          />
+          <a href="../zoos/gorilla/gorilla.html">
+            <figure class="the-animal monke-pic">
+              <span class="tooltiptext">GORILLA, Eastern DRC</span>
+              <img
+                src="../../assets/icons/illuminati.svg"
+                alt=""
+                class="tooltip-triang"
+              />
+            </figure>
+          </a>
+        </figure>
+        <figure class="China">
+          <figcaption class="country Chinac">China</figcaption>
+          <img
+            src="../../assets/images/China.svg"
+            alt="China"
+            class="China-pic"
+          />
+          <img
+            src="../../assets/icons/point.svg"
+            alt="point panda"
+            class="point panda"
+          />
+          <a href="../zoos/panda/">
+            <figure class="the-animal panda-pic">
+              <span class="tooltiptext">PANDA, China</span>
+              <img
+                src="../../assets/icons/illuminati.svg"
+                alt=""
+                class="tooltip-triang"
+              />
+            </figure>
+          </a>
+        </figure>
+      </img>
     </section>
+    <div class="cover hidden" id="cover"></div>
+    <div class="form-donat hidden" id="form-donat">
+      <form action="" id="form-don">
+        <button class="closeBtn"></button>
+        <form action="" id="donat-pick-animal">
+          <select name="hero" class="donat-selected-animal">
+            <option value="" disabled selected class="donat-animal">
+              Animal
+            </option>
+            <option value="t1" class="donat-animal">Alligator</option>
+            <option value="t2" class="donat-animal">Panda</option>
+            <option value="t3" class="donat-animal">Eagle</option>
+            <option value="t4" class="donat-animal">Gorilla</option>
+          </select>
+        </form>
+        <div class="form-money">
+          <input type="text" id="value-donat" required placeholder="Donat" />
+          <form class="donat-usd">
+            <select name="hero" class="donat-selected-animal currency">
+              <option value="" disabled selected class="donat-currency">
+                Select your currency
+              </option>
+              <option value="t1" class="donat-currency">USD</option>
+              <option value="t2" class="donat-currency">EUR</option>
+            </select>
+          </form>
+        </div>
+        <textarea
+          id="text-donat"
+          required
+          placeholder="Your text here (280 max)"
+        ></textarea>
+        <button class="button invalid" id="submit-donat" type="submit">
+          Next
+        </button>
+      </form>
+    </div>
+
+    <div class="form-bank hidden" id="form-bank">
+      <button class="closeBtn"></button>
+      <input
+        type="number"
+        class="bank-field card-number"
+        id="cardnumber"
+        required
+        placeholder="Card Number"
+      />
+      <input
+        type="number"
+        class="bank-field month"
+        id="month"
+        required
+        placeholder="MM"
+      />
+      <input
+        type="number"
+        class="bank-field year"
+        id="year"
+        required
+        placeholder="YY"
+      />
+      <input
+        type="text"
+        class="bank-field cardholder"
+        id="cardholder"
+        required
+        placeholder="Cardholder Name"
+      />
+      <input
+        type="number"
+        class="bank-field cvc"
+        id="cvc"
+        required
+        placeholder="CVC"
+      />
+
+      <button class="button invalid" id="bank-pay" type="submit">Pay</button>
+    </div>
     <footer class="footer">
       <div class="foot-wrapper">
         <div class="f-main-cont">
@@ -139,7 +219,7 @@
             <a href="../Landing/Landing.html" class="logo-foot">
               <button class="logo_zoo-foot"></button>
             </a>
-            <button class="foot-button">
+            <button class="foot-button" id="footBtn">
               <span class="head-play__button__play">Donate for volunteers</span>
             </button>
             <div class="foot-am">
@@ -192,5 +272,7 @@
         </div>
       </div>
     </footer>
+    <script src="../Landing/script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
