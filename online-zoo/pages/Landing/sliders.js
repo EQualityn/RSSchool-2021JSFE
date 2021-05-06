@@ -63,18 +63,18 @@ for (let i = 0; i < pets.length; i++) {
 
 let nextdraw = 1;
 let i = 0;
-let zooLink = document.querySelectorAll(".piz__animal");
+let animalLinks = document.querySelectorAll(".piz__animal");
 
 function draw() {
     let img = document.createElement("img");
     img.src = slider[nextdraw];
     img.classList.add("animal");
-    for (; i < zooLink.length;) {
-        zooLink[i].appendChild(img);
+    while (i < animalLinks.length) {
+        animalLinks[i].appendChild(img);
         break;
     }
     i++;
-    nextdraw + 1 == slider.length ? nextdraw = 0 : nextdraw++
+    nextdraw + 1 == slider.length ? nextdraw = 0 : nextdraw++;
 }
 let n = 0;
 while (n < PICLEN) {
