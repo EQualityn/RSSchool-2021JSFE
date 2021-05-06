@@ -703,8 +703,110 @@ right: 1217px;
     text-align: center;
     color: #000000;
 }
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.carousel {
+  display: flex;
+  width: 100%;
+  height: 70%;
+  align-items: center;
+  position: relative;
 
-.hiw__animals {
+  background-repeat: no-repeat;
+  
+ 
+ background-position: 50% 50%;
+  background-image: url(../../assets/images/ashes.svg);
+}
+  .hiw__animals {
+    display: flex;
+    list-style: none;
+    position: relative;
+    top: -40px;
+    left: -30px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 549px;
+  
+/*      
+        margin-top: 29px;
+        width: 1365px;
+        height: 549px;
+        background-image: url(../../assets/images/ashes.svg);
+        background-repeat: no-repeat;
+        margin-left: 15px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        position: relative; */
+    
+  }
+  
+  .hiw__animal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0px;
+    width: 350px;
+    height: 450px;
+    background-size: cover;
+    position: absolute;
+    
+    transition: all .3s ease-in;
+  }
+    .hiw__animal:nth-child(1) {
+      background: url(../../assets/images/eagle1.png);
+      background-size: 350px 450px;
+    }
+    .hiw__animal:nth-child(2) {
+      background: url(../../assets/images/monke1.png);
+      background-size: 350px 450px;
+    }
+    .hiw__animal:nth-child(3) {
+      background: url(../../assets/images/panda1.png);
+    }
+    .hiw__animal:nth-child(4) {
+      background: url(../../assets/images/elephant1.png);
+      background-size: 350px 450px;
+    }
+    .hiw__animal:nth-child(5) {
+      background: url(../../assets/images/tiger1.png);
+      background-size: 350px 450px;
+    }
+    
+    .hiw__animal[data-pos="0"] {
+      z-index: 5;
+    }
+    
+   
+    
+    .hiw__animal[data-pos="-1"] {
+      transform: translateX(-80%) scale(.9);
+      z-index: 4;
+    }
+    
+    .hiw__animal[data-pos="1"] {
+      transform: translateX(80%) scale(.9);
+      z-index: 4;
+    }
+    
+   
+    
+    .hiw__animal[data-pos="-2"] {
+      transform: translateX(-150%) scale(.8);
+      z-index: 3;
+    }
+    
+    .hiw__animal[data-pos="2"] {
+      transform: translateX(150%) scale(.8);
+      z-index: 3;
+    }
+
+
+
+
+/* .hiw__animals {
     margin-top: 29px;
     width: 1365px;
     height: 549px;
@@ -750,25 +852,29 @@ left: 9px;
     transform: scale(1.2, 1.143);
     right: 280px;
     z-index: 2;
-}
+} */
 
 
 
 .hiw__app-descr {
-    margin-top: 17px;
+    position: relative;
+    top: -80px;
     width: 60%;
     height: 126px;
     font-family: 'Roboto';
     font-style: normal;
     font-size: 16px;
     line-height: 21px;
-    overflow-y: hidden;
+    
     text-align: center;
 
     /* Style_2 */
 
     
 }
+
+
+
 .piz
 {
     
@@ -800,6 +906,7 @@ left: 9px;
 }
 .piz__animal
 {
+    transition: all .1s ease-in;
     height: 300px;
     width: 233px;
 }

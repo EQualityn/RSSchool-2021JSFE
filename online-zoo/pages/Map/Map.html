@@ -46,91 +46,93 @@
         </header>
       </div>
     </section>
-    <section class="content">
-      <div class="container">
-        <div id="map">
-          <figure class="USA">
-            <figcaption class="country USAc">USA</figcaption>
-            <img
-              src="../../assets/images/USA.svg"
-              alt="'Merica"
-              class="USA-pic"
-            />
-            <img
-              src="../../assets/icons/point.svg"
-              alt="point eagle"
-              class="point eag"
-            />
-            <img
-              src="../../assets/icons/point.svg"
-              alt="point alligator"
-              class="point allig"
-            />
-            <a href="../zoos/eagle/eagle.html">
-              <figure class="the-animal eagle-pic">
-                <span class="tooltiptext">EAGLE, California, USA</span>
-                <img
-                  src="../../assets/icons/illuminati.svg"
-                  alt=""
-                  class="tooltip-triang"
-                />
-              </figure>
-            </a>
-            <a href="../zoos/alligator/alligator.html">
-              <figure class="the-animal allig-pic">
-                <span class="tooltiptext">ALLIGATOR, Florida, USA</span>
-                <img
-                  src="../../assets/icons/illuminati.svg"
-                  alt=""
-                  class="tooltip-triang"
-                />
-              </figure>
-            </a>
-          </figure>
-          <figure class="DRC">
-            <figcaption class="country DRCc">Eastern DRC</figcaption>
-            <img src="../../assets/images/DRC.svg" alt="DRC" class="DRC-pic" />
-            <img
-              src="../../assets/icons/point.svg"
-              alt="point monke"
-              class="point monke"
-            />
-            <a href="../zoos/gorilla/gorilla.html">
-              <figure class="the-animal monke-pic">
-                <span class="tooltiptext">GORILLA, Eastern DRC</span>
-                <img
-                  src="../../assets/icons/illuminati.svg"
-                  alt=""
-                  class="tooltip-triang"
-                />
-              </figure>
-            </a>
-          </figure>
-          <figure class="China">
-            <figcaption class="country Chinac">China</figcaption>
-            <img
-              src="../../assets/images/China.svg"
-              alt="China"
-              class="China-pic"
-            />
-            <img
-              src="../../assets/icons/point.svg"
-              alt="point panda"
-              class="point panda"
-            />
-            <a href="../zoos/panda/">
-              <figure class="the-animal panda-pic">
-                <span class="tooltiptext">PANDA, China</span>
-                <img
-                  src="../../assets/icons/illuminati.svg"
-                  alt=""
-                  class="tooltip-triang"
-                />
-              </figure>
-            </a>
-          </figure>
-        </div>
+    <section class="content" id="wrapper">
+      <div class="zoom">
+        <button class="zoombtn plus" id="zoomIn">+</button>
+        <button class="zoombtn minus" id="zoomOut">-</button>
       </div>
+      <img src="../../assets/images/map.svg" id="map">
+        <figure class="USA">
+          <figcaption class="country USAc">USA</figcaption>
+          <img
+            src="../../assets/images/USA.svg"
+            alt="'Merica"
+            class="USA-pic"
+          />
+          <img
+            src="../../assets/icons/point.svg"
+            alt="point eagle"
+            class="point eag"
+          />
+          <img
+            src="../../assets/icons/point.svg"
+            alt="point alligator"
+            class="point allig"
+          />
+          <a href="../zoos/eagle/eagle.html">
+            <figure class="the-animal eagle-pic">
+              <span class="tooltiptext">EAGLE, California, USA</span>
+              <img
+                src="../../assets/icons/illuminati.svg"
+                alt=""
+                class="tooltip-triang"
+              />
+            </figure>
+          </a>
+          <a href="../zoos/alligator/alligator.html">
+            <figure class="the-animal allig-pic">
+              <span class="tooltiptext">ALLIGATOR, Florida, USA</span>
+              <img
+                src="../../assets/icons/illuminati.svg"
+                alt=""
+                class="tooltip-triang"
+              />
+            </figure>
+          </a>
+        </figure>
+        <figure class="DRC">
+          <figcaption class="country DRCc">Eastern DRC</figcaption>
+          <img src="../../assets/images/DRC.svg" alt="DRC" class="DRC-pic" />
+          <img
+            src="../../assets/icons/point.svg"
+            alt="point monke"
+            class="point monke"
+          />
+          <a href="../zoos/gorilla/gorilla.html">
+            <figure class="the-animal monke-pic">
+              <span class="tooltiptext">GORILLA, Eastern DRC</span>
+              <img
+                src="../../assets/icons/illuminati.svg"
+                alt=""
+                class="tooltip-triang"
+              />
+            </figure>
+          </a>
+        </figure>
+        <figure class="China">
+          <figcaption class="country Chinac">China</figcaption>
+          <img
+            src="../../assets/images/China.svg"
+            alt="China"
+            class="China-pic"
+          />
+          <img
+            src="../../assets/icons/point.svg"
+            alt="point panda"
+            class="point panda"
+          />
+          <a href="../zoos/panda/">
+            <figure class="the-animal panda-pic">
+              <span class="tooltiptext">PANDA, China</span>
+              <img
+                src="../../assets/icons/illuminati.svg"
+                alt=""
+                class="tooltip-triang"
+              />
+            </figure>
+          </a>
+        </figure>
+      </img>
     </section>
     <div class="cover hidden" id="cover"></div>
     <div class="form-donat hidden" id="form-donat">
@@ -271,5 +273,6 @@
       </div>
     </footer>
     <script src="../Landing/script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
